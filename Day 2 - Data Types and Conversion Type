@@ -1,2 +1,23 @@
 Day 2 of 100 days of code
 # data types, numbers, operations, strings, formatted strings
+
+# subscripting
+# example 
+print('hello'[0]) # prints the first letter
+print('hello'[-1]) # prints the last letter
+
+# Concatenation
+print('Fabian Robert ' + 'Banu Stan')
+
+# Integer = Whole number
+print(123+345) # sums the two numbers
+
+# When dealing with large numbers for example in UK, they are usually split with commas.
+342654991 # 342,654,991. In python use 123_456_789 = 123456789
+
+# Float
+PI = 3.14159
+
+# Boolean [True,False]
+
+
