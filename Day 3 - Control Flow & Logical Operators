@@ -1,0 +1,18 @@
+# Conditional Statements,Logical Operators, Code blocks and scope
+if else statement
+
+print('Welcome to the rollercoaster')
+height = input('What is your height in cm?')
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+age = int(input('What is your age?'))
+
+if (height > 120):
+    print('you can ride')
+    if age > 18:
+        print('you have to pay $7')
+    else:
+        print('You have to pay $12')
+else:
+    print('you have to grow taller')
