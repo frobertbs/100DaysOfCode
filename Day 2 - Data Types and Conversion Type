@@ -22,5 +22,10 @@ PI = 3.14159
 
 round(float_parameter,decimalnumbers)
 
+# format strings
+name = 'Fabian'
+lastName = 'Robert'
+print(f'my name is {name}')
+
 
 
