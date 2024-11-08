@@ -16,3 +16,35 @@ if (height > 120):
         print('You have to pay $12')
 else:
     print('you have to grow taller')
+
+
+# Pizza Order Exercise to calculate bill
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M or L: ")
+pepperoni = input("Do you want pepperoni on your pizza? Y or N: ")
+extra_cheese = input("Do you want extra cheese? Y or N: ")
+
+bill = 0
+
+if size == 'S':
+    bill += 15
+    if pepperoni == 'Y':
+        bill += 2
+elif size == 'M':
+    bill += 20
+    if pepperoni == 'Y':
+        bill += 3
+elif size == 'L':
+    bill += 25
+    if pepperoni == 'Y':
+        bill += 3
+else:
+    print('you have typed the wrong input')
+    bill += 0
+
+if extra_cheese == 'Y':
+    bill += 1
+else:
+    bill += 0
+print(f'Your final bill is: ${bill}')
+
