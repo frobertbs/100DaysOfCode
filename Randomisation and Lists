@@ -1,0 +1,9 @@
+# Randomisation in a programming language is specially important in games for example. Finance where parameters should be random. Or if we want the program to do a different thing each time,
+# we need randomisation
+
+# random module
+import random
+
+random.randint(1,10) # generates numbers between 1 and 10 with equal probability.
+
+
