@@ -10,4 +10,31 @@ so from the main.py file we can import the payments.py file using import payment
 
 random.randint(1,10) # generates numbers between 1 and 10 with equal probability.
 
+# there is another function from the random module called uniform.
+random.uniform(a,b) range from a to b including both numbers.
+
+# generate floating point numbers between 0 and 1
+#print(random.random())
+
+# generate integers
+#print(random.randint(1,6))
+
+# random_number_0_to_1 = random.random() * 10
+# print(random_number_0_to_1)
+
+# rand_floating_number = random.uniform(0,1)
+# print(rand_floating_number)
+
+
+# heads or tails program
+# heads if the random number generated is less or equal to 0.5
+# tails if the random number generated is greater or equal to 0.5
+
+random_heads_tails_number = random.uniform(0,1)
+if(random_heads_tails_number <= 0.5):
+    print(random_heads_tails_number)
+    print('heads')
+else:
+    print(random_heads_tails_number)
+    print('tails')
 
