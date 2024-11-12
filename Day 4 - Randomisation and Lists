@@ -38,3 +38,9 @@ else:
     print(random_heads_tails_number)
     print('tails')
 
+# lists
+friends = ['Robert', 'Ana', 'Bogdan', 'Denisa', 'Alex', 'Alina', 'Luci', 'Larisa', 'Coco', 'Ioana', 'Flori', 'Adi']
+friends_len = len(friends) - 1
+who_pays = random.randint(0,friends_len)
+print(friends[who_pays])
+
