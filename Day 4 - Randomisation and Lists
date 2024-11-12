@@ -4,6 +4,10 @@
 # random module
 import random
 
+the import sentence can be used also with others python files. For example if we create a new python file we can import it using the import keyword.
+let's say we create the payments.py file
+so from the main.py file we can import the payments.py file using import payments 
+
 random.randint(1,10) # generates numbers between 1 and 10 with equal probability.
 
 
