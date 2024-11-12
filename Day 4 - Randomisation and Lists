@@ -44,3 +44,95 @@ friends_len = len(friends) - 1
 who_pays = random.randint(0,friends_len)
 print(friends[who_pays])
 
+
+
+# Rock Paper Scissors App
+import random
+
+# Rock, Paper, Scissors game
+
+rock = '''
+    _______
+---   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+# Scissors
+scissors = '''
+    _______
+---   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+print('Welcome to the Rock Paper Scissors Game')
+user_choice = int(input('What do you choose? Type 0 for Rock, 1 for Paper, 2 for Scissors'))
+print(f'{user_choice}\n') 
+
+if(user_choice == 0):
+    print(rock)
+elif(user_choice == 1):
+    print(paper)
+elif(user_choice == 2):
+    print(scissors)
+else:
+    user_choide = int(input('Please try again, you have not entered a correct number'))
+
+computer_choice = random.randint(0,2)
+print('Computer chose:\n')
+if(computer_choice == 0):
+     print(rock)
+elif(computer_choice == 1):
+    print(paper)
+else:
+    print(scissors)
+
+
+if user_choice == 0 and computer_choice == 2:
+    print('You Win')
+elif user_choice == 2 and computer_choice == 1:
+    print('You Win')
+elif(user_choice == 1 and computer_choice == 0):
+    print('You win')
+elif (user_choice == computer_choice):
+    print('It\'s a tie')
+else:
+    print('You lose')
+    
+
+
+'''
+Then, the rules can be represented with these conditions:
+
+Rock (0) beats Scissors (2):
+
+Condition: (player1 == 0 and player2 == 2)
+
+Scissors (2) beats Paper (1):
+
+Condition: (player1 == 2 and player2 == 1)
+Paper (1) beats Rock (0):
+
+Condition: (player1 == 1 and player2 == 0)
+To determine a winner between two players using these conditions:
+
+If any of these conditions is true, player1 wins.
+If player1 == player2, it’s a tie.
+Otherwise, player2 wins.
+
+'''
+
+
