@@ -27,3 +27,63 @@ for number in range(1,10):
 
 # Gauss challenge with code
 
+# passwordGenerator
+
+import random
+from typing import List
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+lenLetters = len(letters)
+lenNumbers = len(numbers)
+lenSymbols = len(symbols)
+
+passwordLetters = []
+passwordSymbols = []
+passwordNumbers = []
+
+print("Welcome to the PyPassword Generator!")
+nr_letters = int(input("How many letters would you like in your password?\n"))
+nr_symbols = int(input(f"How many symbols would you like?\n"))
+nr_numbers = int(input(f"How many numbers would you like?\n"))
+
+# easy level and hard level
+
+for i in range(1,nr_letters + 1):
+    randomLetter = random.randint(0,lenLetters-1)
+    passwordLetters.append(letters[randomLetter])
+
+for i in range(1,nr_symbols + 1):
+    randomSymbol = random.randint(0,lenSymbols - 1)
+    passwordSymbols.append(symbols[randomSymbol])
+
+for i in range(1,nr_numbers + 1):
+    randomNumber = random.randint(0,lenNumbers - 1)
+    passwordNumbers.append(numbers[randomNumber])
+
+passwordLettersString = "".join(passwordLetters)
+passwordSymbolsString = "".join(passwordSymbols)
+passwordNumbersString = "".join(passwordNumbers)
+passwordInSequence = passwordLettersString + passwordSymbolsString + passwordNumbersString
+
+passwordList = list(passwordInSequence)
+print(f"Sequence :{passwordInSequence}")
+random.shuffle(passwordList)
+print(f"Shuffled :{"".join(passwordList)}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
