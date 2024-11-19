@@ -1,0 +1,19 @@
+# In day 7 the Hangman is made using the concepts learned from the previous days such as lists, for and while loops, the random module.
+
+# The hangman game is structured in different steps to accomplish.
+
+# The first step has to do with choosing a random word from a word list. Printing it out. After that the user should guess a letter and print out if each letter 
+
+import random 
+word_list = ["aardvark", "baboon", "camel"]
+
+chosen_word = random.choice(word_list)
+print(chosen_word)
+guessedLetter = input("Guess a letter: ").lower()
+
+for letter in chosen_word:
+    if guessedLetter == letter:
+        print("Right")
+    else:
+        print("Wrong")
+
