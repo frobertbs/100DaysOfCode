@@ -16,3 +16,26 @@ def greet_with(name,location):
     print(f'Hello {name}')
     print(f'What is it like in {location}')
 
+
+def calculate_love_score(lover1, lover2):
+    firstNumber = int()
+    secondNumber = int()
+
+    for i in lover1:
+        if i.lower() == 'T'.lower() or i.lower() == 'R'.lower() or i.lower() == 'U'.lower() or i.lower() == 'E'.lower():
+            firstNumber += 1
+
+    for i in lover2:
+        if i.lower() == 'T'.lower() or i.lower() == 'R'.lower() or i.lower() == 'U'.lower() or i.lower() == 'E'.lower():
+            firstNumber += 1
+
+    for i in lover1:
+        if i.lower() == 'L'.lower() or i.lower() == 'O'.lower() or i.lower() == 'V'.lower() or i.lower() == 'E'.lower():
+            secondNumber += 1
+
+    for i in lover2:
+        if i.lower() == 'L'.lower() or i.lower() == 'O'.lower() or i.lower() == 'V'.lower() or i.lower() == 'E'.lower():
+            secondNumber += 1
+    print(f'Love Score = {firstNumber}{secondNumber}')
+
+
