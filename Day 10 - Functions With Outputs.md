@@ -20,3 +20,10 @@ def is_leap_year(year):
     return result
 ```
 
+#### Docstrings concept
+Docstrings is a way of creating documentation as we code along.
+The docstring has to go after the first line of the declaration of the function
+example:
+def my_function():
+    """Documentation for the function"""
+
