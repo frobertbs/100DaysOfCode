@@ -43,3 +43,5 @@ city: London
 
 * *args devuelve una tupla de valores
 * **kwargs funciona a través de keywords, devuelve un diccionario
+* ![image](https://github.com/user-attachments/assets/7629089f-853e-4ddb-b0c5-9c33752985eb)
+
